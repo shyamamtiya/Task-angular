@@ -1,0 +1,22 @@
+h5{
+  padding-bottom: 20px;
+  border-bottom: 1px solid black;
+}
+input{
+  width:40px!important;
+  border:0;
+}
+.form-control{
+  border-radius:0;
+}
+.minus{
+  border-radius: 50%!important;
+  margin-right: 10px;
+}
+.plus{
+  border-radius: 50% !important;
+  margin-left: 10px;
+}
+.form-control:disabled, .form-control[readonly]{
+  background-color: #fff;
+}

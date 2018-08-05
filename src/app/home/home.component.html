@@ -1,0 +1,53 @@
+<div class="card">
+  <div class="card-header">
+    Choose number of people
+  </div>
+  <div class="card-body">
+
+    <div class="card-text">
+      <ul>
+        <li>
+          <h5>
+            <i class="fa fa-hotel "></i> Rooms
+            <span class="pull-right">
+              <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                <button type="button" class="btn btn-primary minus" (click)="incrDecr('room',false)" ><i class="fa fa-minus " ></i> </button>
+                <div class="input-group">
+                    <input type="text" [value]="this.rooms" class="form-control" placeholder="" aria-label="Input group example" aria-describedby="btnGroupAddon" [minLength]="roomMinValue" [maxLength]="roomMaxValue" disabled>
+                  </div>
+                <button type="button" class="btn btn-danger plus" (click)="incrDecr('room',true)"><i class="fa fa-plus "></i> </button>
+
+              </div>
+            </span>
+          </h5>
+        </li>
+        <li>
+          <h5>
+            <i class="fa fa-user "></i> Adults<span class="pull-right">
+                <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                  <button type="button" class="btn btn-primary minus" (click)="incrDecr('adult',false)" ><i class="fa fa-minus "></i> </button>
+                  <div class="input-group">
+                      <input type="text" [value]="this.adults"  class="form-control" placeholder="" aria-label="Input group example" aria-describedby="btnGroupAddon" [minLength]="adultMinValue"  [maxLength]="adultMaxValue" disabled>
+                    </div>
+                  <button type="button" class="btn btn-danger plus" (click)="incrDecr('adult',true)"><i class="fa fa-plus "></i> </button>
+
+                </div>
+              </span></h5>
+        </li>
+        <li>
+          <h5>
+            <i class="fa fa-help "></i> Children <span class="pull-right">
+                <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                  <button type="button" class="btn btn-primary minus" (click)="incrDecr('child',false)"><i class="fa fa-minus "></i> </button>
+                  <div class="input-group">
+                      <input type="text" [value]="this.child" class="form-control" placeholder="" aria-label="Input group example" aria-describedby="btnGroupAddon" [minLength]="childrenMinValue"  [maxLength]="childrenMaxValue" disabled>
+                    </div>
+                  <button type="button" class="btn btn-danger plus" (click)="incrDecr('child',true)"><i class="fa fa-plus "></i> </button>
+
+                </div>
+              </span></h5>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

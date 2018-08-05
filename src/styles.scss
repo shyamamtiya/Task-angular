@@ -1,1 +1,9 @@
-/* You can add global styles to this file, and also import other style files */
+@import './app/scss/_custom_theme.scss';
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+.container{
+  margin-top:50px;
+}
+li{
+  list-style-type:none;
+}
